@@ -7,11 +7,26 @@
       width: 200px;
       padding: 10px;
     }
+    #savedTabsList {
+      margin-top: 10px;
+    }
+    #savedTabsList ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    #savedTabsList li {
+      margin: 5px 0;
+      cursor: pointer;
+      word-break: break-all;
+    }
   </style>
-  <script src="popup.js"></script>
 </head>
 <body>
   <button id="saveTabs">Save Tabs</button>
-  <button id="openTabs">Open Tabs</button>
+  <button id="openTabs">Open Last Saved Tabs</button>
+  <button id="listTabs">List Saved Sessions</button>
+  <div id="savedTabsList"></div>
+
+  <script src="popup.js"></script>
 </body>
 </html>
